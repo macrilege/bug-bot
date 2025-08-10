@@ -1,16 +1,19 @@
 {
-  "name": "bug-bot",
-  "description": "A simple chat application powered by Cloudflare Workers AI",
-  "version": "0.0.0",
+  "name": "lh-bugbot",
+  "description": "Lake Highlands Pest Control AI chatbot with RAG-powered knowledge base",
+  "version": "1.0.0",
   "cloudflare": {
-    "label": "LLM Chat App",
+    "label": "Pest Control RAG Chat App",
     "products": [
       "Workers",
       "Workers AI",
-      "AI Gateway"
+      "AI Gateway",
+      "Vectorize"
     ],
     "categories": [
-      "ai"
+      "ai",
+      "rag",
+      "pest-control"
     ],
     "docs_url": "https://developers.cloudflare.com/workers-ai/",
     "icon_urls": [],
@@ -24,6 +27,9 @@
     "typescript": "5.8.3",
     "vitest": "3.2.4",
     "wrangler": "4.21.x"
+  },
+  "dependencies": {
+    "marked": "^16.1.2"
   },
   "private": true,
   "scripts": {
